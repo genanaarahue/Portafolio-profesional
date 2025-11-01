@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO DISEÑO</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><center><h1>PORTAFOLIO DIGITAL</h1></header></center>
+   <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@400;700&display=swap" rel="stylesheet">
+    <nav class="menu">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+<Section>
+  </nav>
+   <div class="container">
+    <div id="inicio" class="content active">
+      <h2>Inicio</h2>
+      <p>Bienvenido a mi portafolio profesional, aquí encontrarás una muestra de mis proyectos, donde combino creatividad, técnica y propósito.
+        Cada trabajo realizado refleja mi pasión por el diseño y mi deseo de seguir aprendiendo y crecer profesionalmente.
+      </p>
+    </div>
+
+    <div id="sobre mí" class="contentainer">
+      <h2>Sobre mí</h2>
+      <div class="contenedor">
+        <img src="recursos/img 1.jpg" class="imagen">
+      <p> Hola, soy Génesis Naaraí, estudiante de Diseño Gráfico. Me gusta transformar ideas en conceptos visuales que sean claros y estéticamente coherentes, experimentar con estilos y colaborar en proyectos que generen un impacto positivo. 
+        Mi meta es seguir desarrollándome profesionalmente y dejar una huella creativa en cada diseño.
+      </p>
+      </div>
+
+      <h3>Trayectoria Académica</h3>
+      <ul>
+        <li>Escuela Secundaria José Antonio Alzate Ramírez.</li>
+        <li>Centro de Bachillerato Tecnológico Número 5. María Amparo Viderique de Shein, en la carrera técnica de Diseño Gráfico asistido por Computadora.</li>
+        <li>Actualmente Universidad Tres Culturas en Carrera de Diseño Gráfico.</li>
+      </ul>
+      </div>
+    </div>
+   
+     <div id="proyectos" class="content">
+      <h2>Proyectos</h2>
+      <p> A lo largo de mi trayectoria, he explorado diversas disciplinas artísticas y creativas. He participado en proyectos de pintura grupal, donde he aprendido a colaborar y a fusionar mi visión con la de otros artistas. 
+        En el ámbito individual, he desarrollado mi propio estilo a través de la pintura, experimentando con técnicas y temáticas variadas. Además, me he adentrado en el mundo digital con proyectos de vectorizado y animación, creando ilustraciones y secuencias animadas que dan vida a mis ideas. 
+      </p>
+      <p>Mi interés por la tridimensionalidad me ha llevado a explorar el modelado 3D, diseñando objetos y personajes con gran detalle. Finalmente, he combinado mi pasión por el arte con mi espíritu emprendedor, desarrollando una propuesta de emprendimiento que busca llevar mis creaciones a un público más amplio.
+      </p>
+      <div class="mosaico">
+        <img src="recursos/img 2.png" alt="imagen 2" onclick="abririmagen(this)">
+        <img src="recursos/img 3.png" alt="imagen 3" onclick="abririmagen(this)">
+        <img src="recursos/img 4.jpg" alt="imagen 4" onclick="abririmagen(this)">
+        <img src="recursos/img 5.jpg" alt="imagen 5" onclick="abririmagen(this)">
+        <img src="recursos/img 6.jpg" alt="imagen 6" onclick="abririmagen(this)">
+        <img src="recursos/img 7.jpg" alt="imagen7" onclick="abririmagen(this)">
+        <img src="recursos/img 8.jpg" alt="imagen8" onclick="abririmagen(this)">
+        <img src="recursos/img 9.jpg" alt="imagen 9" onclick="abririmagen (this)">
+        <img src="recursos/img 10.png" alt="imagen10" onclick="abririmagen (this)">
+        <img src="recursos/img 11.jpg" alt="imagen11" onclick="abririmagen (this)">
+      </div>
+      
+
+    <div id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>Email: genesisnaaraipaez@gmail.com</p>
+      <p>TEL: 55 6162 7791</p>
+    </div>
+  </div>
+</Section>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.content');
+      secciones.forEach(seccion => seccion.classList.remove('active'));
+
+      const seleccionada = document.getElementById(id);
+      if (seleccionada) {
+        seleccionada.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+
+<footer>@2025 derechos reservados</footer>
+</html>
